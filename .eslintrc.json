@@ -38,6 +38,7 @@
         "max-len": ["error", { "code": 150 }],
         "consistent-return": "off",
         "react/jsx-props-no-spreading": "off",
-        "react/jsx-max-props-per-line": [1, { "maximum": 2, "when": "multiline" }]
+        "react/jsx-max-props-per-line": [1, { "maximum": 2, "when": "always" }],
+        "no-console": "off"
     }
 }
