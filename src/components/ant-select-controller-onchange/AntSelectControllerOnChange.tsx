@@ -24,7 +24,7 @@ export const AntSelectControllerOnChange: React.FC<IProps> = (props: IProps) => 
 
     return (
         <>
-            <p>{name}</p>
+            <label>{name}</label>
             <Controller
                 as={ASelect}
                 name={name}

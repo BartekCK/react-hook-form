@@ -8,7 +8,7 @@ type Ref = HTMLInputElement;
 
 export const PlainInput = React.forwardRef<Ref, IProps>((props: IProps, ref) => (
     <>
-        <p>{props.name}</p>
+        <label>{props.name}</label>
         <input
             name={props.name}
             ref={ref}

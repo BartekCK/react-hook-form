@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { Button } from 'react-bootstrap';
 import { PlainInput } from '../../components/plain-input/PlainInput';
@@ -18,7 +18,7 @@ const FormBase: React.FC = () => {
 
     return (
         <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
-            <p>plainInput</p>
+            <label>plainInput</label>
             <input name="plainInput" ref={register} />
 
             <PlainInput name="plainInputRef" ref={register} />
@@ -26,13 +26,13 @@ const FormBase: React.FC = () => {
 
             <AntInputController
                 name="antInput" placeholder="antInput"
-                control={control}
+                control={control} errors={errors}
             />
             <AntSelectControllerOnChange name="antSelectOnChange" control={control} />
 
             <AntSelectControllerUseEffect
                 register={register} name="antSelectUseEffect"
-                setValue={setValue}
+                setValue={setValue} errors={errors}
             />
 
             <Button

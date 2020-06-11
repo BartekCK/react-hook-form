@@ -10,7 +10,7 @@ export const PlainSelect: React.FC<IProps> = (props: IProps) => {
 
     return (
         <>
-            <p>{name}</p>
+            <label>{name}</label>
             <select name={name} ref={register}>
                 <option hidden> </option>
                 <option value="Man">Man</option>
